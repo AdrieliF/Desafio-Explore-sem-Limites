@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+:root {
+  font-size: 62.5%;
+
+  --font-color-h: #B52184;
+  --font-color-text: #312D64;
+  ---bg-font-color: #FFFFFF;
+}
+
+body {
+  font-weight: 600;
+  color: var(--font-color-text);
+}
+
+body, input::placeholder {
+  font-family: 'Mulish', sans-serif;
+}
+
+main {
+  width: 100%;
+  padding: 0 3.4rem 9.3rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+main img #top {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h1 {
+  color: var(--font-color-h);
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin: 1.7rem 0 0.5rem 0;
+}
+
+main p {
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+main button {
+  border: none;
+  margin-bottom: 3rem;
+  background-color: var(---bg-font-color);
+}
+
+section {
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 5rem;
+  padding: 5.4rem 4rem;
+}
+
+.card {
+  background-color: var(---bg-font-color);
+  border-radius: 2rem;
+  padding: 2.6rem;
+}
+
+.card h2 {
+  margin: 3.3rem auto 2rem;
+  color: var(--font-color-h);
+  font-weight: 900;
+  font-size: 2.9rem;
+  line-height: 3.6rem;
+}
+
+.card p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+.contact #background {
+  display: none;
+  visibility: hidden;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 2.4rem;
+  margin-top: 7.8rem;
+}
+
+form legend {
+  color: var(--font-color-h);
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  margin: 0 auto 4.3rem;
+}
+
+form label {
+  display: none;
+}
+
+fieldset input {
+  border: none;
+  align-items: center;
+  background: none;
+}
+
+.input-group {
+  border-radius: 16px;
+  border: 1.5px solid var(--font-color-text);
+  height: 4.8rem;
+  width: min(90%, 59.2rem);
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.input-group img {
+  padding-left: 1.4rem;
+}
+
+input::placeholder {
+  color: var(--font-color-text);
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.2rem;
+}
+
+#message {
+  height: 12.6rem;
+  border-radius: 16px;
+  border: 1.5px solid var(--font-color-text);
+  width: min(90%, 59.2rem);
+  margin: 0 auto;
+}
+
+form button {
+  border-radius: 16px;
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  color: var(---bg-font-color);
+  width: 15.1rem;
+  height: 4.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  margin: 0 auto;
+}
+
+footer {
+  background: linear-gradient(134deg, #343193 0%, #302C63 100%);
+  width: 100%;
+  margin-top: 6.5rem;
+}
+
+footer p {
+  color: var(---bg-font-color);
+  font-size: 2rem;
+  padding: 1.6rem;
+  text-align: center;
+}
+
+@media (min-width: 1440px) {
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+  }
+
+  main #top {
+    width: 71.9rem;
+    margin: 0 0 10rem;
+    padding-right: 2.9rem;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .group h1 {
+    font-size: 5.8rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+  }
+
+  .group p {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 17.9rem; 
+  }
+
+  main .button {
+    margin: 0;
+    justify-self: flex-end;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    padding: 6.4rem 5rem;
+    gap: 5rem;
+  }
+
+  section .card {
+    padding: 3.2rem;   
+  }
+
+  .contact #background {
+    display: flex;
+    visibility: visible;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact form {
+    margin: 9.5rem 9.2rem 9.4rem 10.9rem;
+  }
+
+  .input-group,
+  #message {
+    width: 50rem;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
